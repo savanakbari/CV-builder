@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+        android:id="@+id/fname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name of PDF " />
+
+    <EditText
+        android:id="@+id/ftext"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:hint="Full Name " />
+    <EditText
+        android:id="@+id/fphone"
+        android:inputType="number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number" />
+    <EditText
+        android:id="@+id/femail"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:hint="Email-Address"
+        android:layout_weight="0.00" />
+    <EditText
+        android:id="@+id/faddress"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:hint="Address"
+        android:layout_weight="0.00" />
+    <EditText
+        android:id="@+id/fobjective"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:hint="Career Objective"
+        android:layout_weight="0.00" />
+    <EditText
+        android:id="@+id/feducation"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:hint="Education"
+        android:layout_weight="0.00" />
+
+    <EditText
+        android:id="@+id/fcoursework"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:hint="Course Undertaken"
+        android:layout_weight="0.00" />
+
+    <EditText
+        android:id="@+id/ftechskill"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:hint="Techincal Skills"
+        android:layout_weight="0.00" />
+    <EditText
+        android:id="@+id/fexperience"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:hint="Experience"
+        android:layout_weight="0.00" />
+    <EditText
+        android:id="@+id/fproject"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:hint="Projects Undertaken"
+        android:layout_weight="0.00" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnwrite"
+        android:text="Build it!"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewsd"
+        android:text="View It!!"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
