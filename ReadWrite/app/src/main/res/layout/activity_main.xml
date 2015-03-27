@@ -97,7 +97,8 @@
         android:id="@+id/btnwrite"
         android:text="Build it!"
         android:layout_marginLeft="150dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        style="@style/CoolButton"/>
 
     <Button
         android:layout_width="wrap_content"
