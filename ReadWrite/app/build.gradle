@@ -24,4 +24,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile project(':itextpdf-5.5.5')
     compile 'uk.co.chrisjenx:calligraphy:2.0.2'
+    compile 'com.github.traex.rippleeffect:library:1.2.4'
 }

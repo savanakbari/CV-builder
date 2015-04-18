@@ -2,11 +2,25 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jar="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\exploded-aar\com.github.traex.rippleeffect\library\1.2.4\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-fbfe90524f938c39a2a52e9e3e8d26572a7d2f36.jar" />
+        sha1="92d981b737c081135da787938b9b12d484f42387">
+        <dex dex="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\pre-dexed\debug\classes-6998e189d70d6cdfd17a082117cf43bbb6874205.jar" />
+    </item>
+    <item
+        jar="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\pre-dexed\debug\classes-de4bd235ede508a78abb75c4b6bcd9926352b880.jar" />
+    </item>
+    <item
+        jar="C:\Users\savan\AndroidStudioProjects\ReadWrite\itextpdf-5.5.5\itextpdf-5.5.5.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dfa986eb534a5b0c6684343c9adc06614985e54f">
+        <dex dex="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\pre-dexed\debug\itextpdf-5.5.5-f5a79c6bdf328caab35ac64b1f14a065f3b40f95.jar" />
     </item>
     <item
         jar="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\exploded-aar\uk.co.chrisjenx\calligraphy\2.0.2\classes.jar"
@@ -23,18 +37,11 @@
         <dex dex="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-220a732b16eb452beb983554d3e25d1735c90ba7.jar" />
     </item>
     <item
-        jar="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jar="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\pre-dexed\debug\classes-de4bd235ede508a78abb75c4b6bcd9926352b880.jar" />
-    </item>
-    <item
-        jar="C:\Users\savan\AndroidStudioProjects\ReadWrite\itextpdf-5.5.5\itextpdf-5.5.5.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="dfa986eb534a5b0c6684343c9adc06614985e54f">
-        <dex dex="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\pre-dexed\debug\itextpdf-5.5.5-f5a79c6bdf328caab35ac64b1f14a065f3b40f95.jar" />
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-fbfe90524f938c39a2a52e9e3e8d26572a7d2f36.jar" />
     </item>
     <item
         jar="C:\Users\savan\AndroidStudioProjects\ReadWrite\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"

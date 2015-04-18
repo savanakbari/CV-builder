@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -27,9 +27,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-            </activity>
-
+        <activity android:name=".TemplateOne"
+            android:label="@string/title_activity_template_one">
+        </activity>
+        <activity
+            android:name=".TemplateSelection"
+            android:label="@string/title_activity_template_selection" >
+        </activity>
+        <activity
+            android:name=".TemplateTwo"
+            android:label="@string/title_activity_template_two" >
+        </activity>
     </application>
 
 </manifest>

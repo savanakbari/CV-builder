@@ -21,13 +21,13 @@ public class Splash extends Activity {
                         .build()
         );
 
-        int secondsDelayed=3;
+        int secondsDelayed=1;
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                startActivity(new Intent(getBaseContext(), MainActivity.class));
+                startActivity(new Intent(getBaseContext(), TemplateSelection.class));
                 finish();
             }
-        }, secondsDelayed * 1000);
+        }, secondsDelayed * 1700);
     }
 
     @Override
