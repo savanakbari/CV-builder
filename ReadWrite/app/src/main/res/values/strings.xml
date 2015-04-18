@@ -8,4 +8,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_template_selection">CV writer</string>
+    <string name="title_activity_template_two">Template 2</string>
+    <string name="title_activity_template_one">Template 1</string>
+
+
 </resources>

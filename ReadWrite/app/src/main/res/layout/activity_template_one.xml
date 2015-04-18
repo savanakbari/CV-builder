@@ -1,10 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    tools:context=".MainActivity"
     android:weightSum="1">
 
     <ScrollView
@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:orientation="vertical">
 
-            <EditText
+         <EditText
         android:id="@+id/fname"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -91,22 +91,47 @@
         android:hint="Projects Undertaken"
         android:layout_weight="0.00" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnwrite"
-        android:text="Build it!"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="20dp"
-        style="@style/CoolButton"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/viewsd"
-        android:text="View It!!"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="20dp" />
+                <Button
+                    android:id="@+id/btnwrite"
+                    android:layout_marginTop="20dp"
+                    android:text="Build it "
+                    android:layout_width="165dp"
+                    android:layout_height="60dp"
+                    android:typeface="sans"
+                    android:background="@drawable/buttonshape_small"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    />
+
+          <Button
+              android:id="@+id/viewsd"
+              android:layout_marginTop="20dp"
+              android:text="View it "
+              android:layout_width="165dp"
+              android:layout_height="60dp"
+              android:typeface="sans"
+              android:background="@drawable/buttonshape_small"
+              android:layout_gravity="center_horizontal"
+              android:textColor="#FFFFFF"
+              android:textSize="30sp"
+              />
+
+          <Button
+              android:id="@+id/mailbutton"
+              android:layout_marginTop="20dp"
+              android:text="Mail it "
+              android:layout_width="165dp"
+              android:layout_height="60dp"
+              android:typeface="sans"
+              android:background="@drawable/buttonshape_small"
+              android:layout_gravity="center_horizontal"
+              android:textColor="#FFFFFF"
+              android:textSize="30sp"
+              android:layout_marginBottom="30dp"
+              />
+
 
         </LinearLayout>
     </ScrollView>

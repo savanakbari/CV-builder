@@ -1,6 +1,7 @@
 package com.example.savan.readwrite;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -11,9 +12,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.File;
 
 
-public class MainActivity extends ActionBarActivity {
+/*
+Main activity for template one
+ */
+
+
+public class TemplateOne extends ActionBarActivity {
     EditText fname, fcontent;
     EditText fcontentphone, fcontentemail, fcontentaddress, fcontentobjective;
     EditText fcontenteducation, fcontentcoursework, fcontenttechskill, fcontentexperience, fcontentproject;
@@ -23,7 +30,7 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_template_one, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -35,7 +42,7 @@ public class MainActivity extends ActionBarActivity {
              break;
           case R.id.clear:
              this.finish();
-             startActivity(new Intent(this,MainActivity.class));
+             startActivity(new Intent(this,TemplateOne.class));
              break;
         }
     return false;
@@ -44,7 +51,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_template_one);
         fname = (EditText) findViewById(R.id.fname);
         fcontent = (EditText) findViewById(R.id.ftext);
         write = (Button) findViewById(R.id.btnwrite);
@@ -80,7 +87,7 @@ public class MainActivity extends ActionBarActivity {
                 String fileexperience = fcontentexperience.getText().toString();
                 String fileproject = fcontentproject.getText().toString();
 
-                FileOperations fop = new FileOperations();
+                FileOperationsOne fop = new FileOperationsOne();
                 fop.write(filename, filecontent, filephone, fileemail, fileaddress, fileobjective, fileeducation, filecourse, filetechskill, fileexperience, fileproject);
                 if (fop.write(filename, filecontent, filephone, fileemail, fileaddress, fileobjective, fileeducation, filecourse, filetechskill, fileexperience, fileproject)) {
                     Toast.makeText(getApplicationContext(),
@@ -106,6 +113,40 @@ public class MainActivity extends ActionBarActivity {
         });
 
 
+     Button mButton = (Button) findViewById(R.id.mailbutton);
+        mButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                try {
+
+                    String emailAddress=fcontentemail.getText().toString();
+                    String filepath=fname.getText().toString();
+
+                    final String path = "/sdcard/" + filepath + ".pdf";
+
+//                    // final String path = Environment.getExternalStorageDirectory().toString()+ "/sdcard/"+ getFileStreamPath() ".pdf";
+
+                    File file = new File(path);
+                    Uri uri = Uri.fromFile(file);
+
+                   // Uri uri = Uri.fromFile(new File(externalStorage.getAbsolutePath() + "/sdcard/" + filepath +".pdf"));
+
+                    Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                    emailIntent.putExtra(Intent.EXTRA_EMAIL, emailAddress);
+                    emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
+                    emailIntent.putExtra(Intent.EXTRA_TEXT, "Text");
+                    emailIntent.setType("application/pdf");
+                    emailIntent.putExtra(Intent.EXTRA_STREAM, uri);
+
+                    startActivity(Intent.createChooser(emailIntent, "Share using"));
+                }
+                catch (Exception e){
+                    Toast.makeText(getBaseContext(),"Failed to attach",Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
 
 
     }
